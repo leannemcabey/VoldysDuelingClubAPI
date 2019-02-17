@@ -1,13 +1,18 @@
 class Api::V1::UsersController < ApplicationController
 
-  def create
-    @new_user = User.new(user_params)
+  def index
+    @all_users = User.all
+    render json: @all_users, status: :accepted
+  end
 
-    if @new_user.save
-      @all_duels = Duel.all
-      render json: @all_duels
-    else
-      render json: { errors: @new_user.errors.full_messages }, status: :unprocessible_entity
+  def show
+    @user = User.find(params[:id])
+    render json: @user, status: :accepted
+  end
+
+  def create
+    @new_user = User.create(user_params)
+    render json: @new_user, status: :accepted
   end
 
   private
