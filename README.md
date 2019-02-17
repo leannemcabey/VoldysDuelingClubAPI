@@ -6,6 +6,8 @@ This is the backend API for this project. The frontend repo can be found [here](
 
 ## Visuals
 
+[Video Demo](https://youtu.be/hkqfFtdOdFY)
+
 ## Installation
 
 ```bash
