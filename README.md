@@ -1,24 +1,22 @@
-# README
+# Voldy's Dueling Club
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voldy's Dueling Club is a game to partake in a wizarding duel against Lord Voldemort. Witches, wizards, squibs, and muggles are welcome.
 
-Things you may want to cover:
+This is the backend API for this project. The frontend repo can be found [here](https://github.com/leannemcabey/VoldysDuelingClubFrontEnd).
 
-* Ruby version
+## Visuals
 
-* System dependencies
+## Installation
 
-* Configuration
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails s
+```
 
-* Database creation
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
