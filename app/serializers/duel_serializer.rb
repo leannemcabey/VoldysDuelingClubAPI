@@ -1,4 +1,4 @@
 class DuelSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :win
+  attributes :id, :win
   belongs_to :user
 end
